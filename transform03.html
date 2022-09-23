@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title> transform-origin </title>
+	<style>
+        body {padding: 100px;}
+        div {
+            background-color: hotpink;
+            color: #fff;
+            padding: 10px;
+            font-size: 1.5rem;
+            text-align: center;
+            width: 200px;
+            height: 150px;
+            margin: 50px;
+            cursor: pointer;
+            transition: .3s ease-in; /* 0.3s = .3s */
+            transform-origin: left top; /* 중심축 변경 hover가 아닌 기준에 넣기!!! */
+        }
+        
+        .box1:hover {
+            transform: scale(1.5) rotate(45deg); /* 중심 센터 기본값*/
+            /* transform-origin: left top; 여기에 넣으면 중심에서 회전하고 휙 옮겨감 이상해짐 */
+        }
+       
+	</style>
+</head>
+<body>
+    <div class="box1">sclale(1.5)<br>회전</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title> background </title>
+	<style>
+        div {
+            border: 1px solid red;
+            width: 400px;
+            height: 300px;
+            margin: 20px;
+            background-image: url(img/background_01.jpeg);
+            background-repeat: no-repeat;
+           /* background-size: 30% 50%
+            x축 y축 = 이미지 비율 때문에 많이 쓰지 않음
+            background-size: 30% 
+            x축 y축 , 단일값 이미지 너비를 30%로 하고 높이는 auto
+            */
+        }
+        .cover { background-size: cover; }/* 크기에 맞게 채워지다가 비율에 맞지 않는 부분은 잘림(크롭)  !!제일 많이 쓰임!! */
+        .contain { background-size: contain; } /* 크기에 맞게 채워지다가 비율에 맞지 않는 부분은 여백으로 노출 */
+	</style>
+</head>
+<body>
+    <div class="cover"></div>
+    <div class="contain"></div>
+</body>
+</html>

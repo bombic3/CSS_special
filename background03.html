@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title> background </title>
+	<style>
+        div {
+            width: 800px;/* background 넣을 때 꼭 사이즈 주기 */
+            height: 500px;
+            border: 1px solid grey;
+        }
+        .box {
+            background-color: pink;
+            background-image: url(img/logo.png); /* 이미지 반복이 기본값 */
+            background-repeat: no-repeat; /* 반복하지 않음
+            repeat-x, repeat-y 옆으로만 반복, 세로로만 반복 가능, 패턴에 쓰임*/
+            background-position: center center; /* x축 y축
+            background-position: right/left top/bottom;
+            background-position: left 10px top 10px;
+            background-position: 20% 30%; */
+        }
+	</style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

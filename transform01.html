@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title> transform </title>
+	<style>
+        div {
+            background-color: hotpink;
+            color: #fff;
+            padding: 5px;
+            font-size: 3rem;
+            text-align: center;
+            width: 500px;
+            margin-bottom: 20px;
+        }
+        
+        /* transform은 한번만 작성, 위의 코드 무시 됨 */
+        .box2 {
+            transform: scaleX(0.5); /* transform은 한번만 작성, 위의 코드 무시 됨 */
+            transform: scaley(0.5);
+        }
+        
+        
+        /* 같음 */
+        .box3 {
+            transform: scaleX(0.5) scaleY(0.5);
+        }
+        .box4 {
+            transform: scale(0.5, 0.5);
+        }
+        /*
+        transform: scaleX(0.5) scaleY(0.5);
+        = transform: scale(0.5, 0.5);
+        */
+        
+	</style>
+</head>
+<body>
+    <div class="box1">transform</div>
+    <div class="box2">transform</div>
+    <div class="box3">transform</div>
+    <div class="box4">transform</div>
+</body>
+</html>

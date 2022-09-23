@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title> position을 이용한 가운데 정렬 2가지 </title>
+	<style>
+        body {
+            background-color: #eee;
+        }
+        .box {
+            background-color: pink;
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            left: 50%; /* 50% 지점에서 요소가 만들어짐 > 오른쪽으로 치우침 */
+            top: 50%; /* 50% 지점에서 요소가 만들어짐 > 아래로 치우침 */
+            margin-left: -150px; /* 내 요소크기 반 만큼 이동 */
+            margin-top: -150px;  
+          
+        }
+	</style>
+</head>
+<body>
+<!-- 실무 = transform: translate 으로 이동 하는 방식으로 많이 씀 -->
+	<div class="box">position</div>
+</body>
+</html>

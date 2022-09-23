@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title> position-menu </title>
+	<style>
+        ul, li { padding: 0; margin: 0; list-style: none; }
+        a { text-decoration: none; color: inherit; }
+        nav { width: 100%; background: #333; letter-spacing: 1px;}
+        .gnb { width: 1180px; height: 35px; margin: 0 auto;
+                padding-left: 30px; color: #fff; line-height: 35px; text-align: center; }
+        .gnb > li { float: left; padding: 0 30px; width: 200px; 
+                    position: relative; }
+        .gnb ul { background: #666; 
+                    position: absolute; 
+                    top: -200px; }
+        .gnb > li ul li { padding: 10px; width: 200px; }
+        .gnb > li:hover ul { top: 35px; }
+	</style>
+</head>
+<body>
+	<nav>
+	    <ul class="gnb">
+	        <li><a href="#">about us</a>
+	            <ul>
+	                <li><a href="#">ceo</a></li>
+	                <li><a href="#">history</a></li>
+	                <li><a href="#">vistion</a></li>
+	            </ul>
+	        </li>
+	        <li><a href="#">works</a>
+	            <ul>
+	                <li><a href="#">ceo</a></li>
+	                <li><a href="#">history</a></li>
+	                <li><a href="#">vistion</a></li>
+	            </ul>
+	        </li>
+	        <li><a href="#">services</a></li>
+            <li><a href="#">location</a></li>  
+	    </ul>
+	</nav>
+</body>
+</html>

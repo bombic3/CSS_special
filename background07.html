@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title> gradient </title>
+	<style>
+        div {
+            width: 300px;
+            height: 150px;
+            display: inline-block;
+            border: 1px solid gray;
+        }
+        .box1 { /* gradient 는 !!!background-image!!! */
+            background-image: linear-gradient(to bottom, #000 0%, #fff 100%);
+            /* 선형 그라디언트 
+            background-image: linear-gradient(방향생략가능(to bottom 기본값), 색상 위치(0%,100% 생략가능), 색상 위치);
+            */
+        }
+        .box2 {
+            background-image: linear-gradient(to right, #000 0%, #fff 100%);
+        }
+        .box3 {
+            background-image: linear-gradient(45deg/*45도*/, #000 0%, #fff 100%);
+        }
+        .box4 {
+            background-image: linear-gradient(blue, 10%, pink);
+        }
+        
+        /*밑에는 많이 쓰임*/
+        .box5 {
+            background-image: linear-gradient(45deg, red 0 50%, blue 70% 100%);
+        }
+        .box6 {
+            background-image: linear-gradient(90deg, red 0 50%, blue 50% 100%); /* 양쪽 색상 분할 배경에서 많이 쓰임 */
+        }
+        .box7 {
+            background-image: repeating-linear-gradient(#2989cc 0%, #2989cc 10%, #fff 10%, #fff 20%); /*선형 디자인*/
+        }
+        .box8 { /* 포토샵과 컬러질라 그라디언트 이용 */
+            
+        }
+        
+        
+        
+        /* radial (ellipse 기본값 타원형) */
+        .box9 {
+            background-image: radial-gradient(circle at center, #fff,#000);
+        }
+        .box10 {
+            background-image: radial-gradient(ellipse/*기본값 타원형*/ at center, #fff,#000);
+        }
+        .box11 {
+            background-image: radial-gradient(circle at right top, #fff, blue);
+        }
+        .box12 {
+            background-image: radial-gradient(yellow 10%, red 50px, blue 50%);
+        }
+        
+        /* 그라이언트 + 이미지 */
+        .box13 {
+            background-image: linear-gradient(to top right, yellow 10%, transparent 50%), url(img/box-2.jpg);
+            background-size: cover;
+        }
+	</style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+    
+    
+    <div class="box9"></div>
+    <div class="box10"></div>
+    <div class="box11"></div>
+    <div class="box12"></div>
+    
+    
+    
+    <div class="box13"></div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title> background </title>
+	<style>
+        div {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            margin: 0 auto;
+        }
+        .box1 {
+            background-color: hotpink;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            margin: 0 auto;
+            /*
+            
+            transition-property: border-radius, background-color;
+            
+            
+            */
+            transition: border-radius 2s linear, background-color 4s ease-in 2s;
+        }
+        
+        .box1:hover { 
+            background-color: green;
+            border-radius: 50%;
+        }
+        
+        
+	</style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title> background </title>
+	<style>
+        div {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+            background-color: gray;
+        }
+        .box1 {
+            background-color: hotpink;
+            /* 개별 속성 알아보기 */
+            transition-property: background-color, height, line-height;
+            /* 속성3개, duration 2개 값일 때 = 하나가 누락이 아니라 홀수 짝수 개념
+            background-color 0.5s
+            height 0.1s
+            line-height 0.5s
+            */
+            transition-duration: 0.5s, 0.1s;
+            transition-delay: 0.1s, 0s, 0.1s;
+        }
+        
+        div:hover { height: 200px; line-height: 200px; }
+        
+        .box2 {
+            background-color: skyblue;
+            transition: background-color 0.5s linear 0.1s, height 0.1s, line-height 0.5s ease-in 0.1s;
+        }
+        
+        /* duration delay */
+	</style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+</body>
+</html>

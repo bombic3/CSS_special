@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title> transform </title>
+	<style>
+        div {
+            background-color: hotpink;
+            color: #fff;
+            padding: 10px;
+            font-size: 1.5rem;
+            text-align: center;
+            width: 200px;
+            height: 150px;
+            margin: 50px;
+            cursor: pointer;
+            transition: .3s ease-in; /* 0.3s = .3s */
+        }
+        
+        .box1:hover {
+            transform: rotate(45deg); /* 회전 */
+        }
+        .box2:hover {
+            transform: scale(2); /* 크기변형 */
+        }
+        .box3:hover {
+            transform: skewX(45deg); /* 뒤틀림 */
+        }
+        .box4:hover {
+            transform: translate(45px, 45px); /* 이동 */
+        }
+       
+	</style>
+</head>
+<body>
+    <div class="box1">rotate(45deg)<br>회전</div>
+    <div class="box2">scale(2)<br>크기</div>
+    <div class="box3">skewX(45deg)<br>뒤틀림</div>
+    <div class="box4">translate(45px)<br>이동</div>
+</body>
+</html>

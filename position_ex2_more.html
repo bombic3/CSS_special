@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> position </title>
+	<style>
+        body { margin: 100px; }
+        .list { width: 500px; height: 300px; position: relative; }
+        .box { width: 100%; background: #eee; padding: 50px; box-sizing: border-box;
+            line-height: 2; margin-bottom: 10px; }
+        a { display: block; width: 100px; height: 35px; background: hotpink; text-align: center; 
+        line-height: 35px; border-radius: 10px; color: #fff; text-decoration: none; 
+        position: absolute; top: -40px; right: 0;}
+        
+	</style>
+</head>
+<body>
+<!-- position을 이용해서 상단 우측배ㅣ 해주세요 
+    부모에게 relative -->
+	<div class="list">
+	    <div class="box">
+	        <ul>
+	            <li>list-1</li>
+	            <li>list-2</li>
+	            <li>list-3</li>
+	            <li>list-4</li>
+	            <li>list-5</li>
+	        </ul>
+	    </div>
+	    <a href="#">더보기</a><!-- 더보기란은 CSS상으론 상단우측에 위치하지만 논리적 마크업할 때에는 밑에 주는게 맞음-->
+	</div>
+</body>
+</html>
